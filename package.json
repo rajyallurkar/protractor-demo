@@ -5,7 +5,10 @@
   "description": "A demo app with Protractor tests",
   "scripts": {
     "start": "node app/expressserver.js",
-    "test": "node_modules/.bin/protractor test/conf.js"
+    "test": "protractor test/conf.js",
+    "tsc": "tsc",
+    "pretest": "npm run tsc",
+    "pree2e": "webdriver-manager update --standalone false"
   },
   "repository": {
     "type": "git",
@@ -13,10 +16,20 @@
   },
   "dependencies": {
     "express": "~3.4.0",
-    "protractor": "2.1.0",
+    "protractor": "~5.2.0",
     "mkdirp": "~0.3.5",
     "q": "1.0.0",
-    "firefox-profile": "0.3.4"
+    "firefox-profile": "0.3.4",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "typescript": "~2.6.2",
+    "@types/jasmine": "~2.5.53",
+    "@types/node": "^6.0.101",
+    "jasmine": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.5.54",
+    "@types/jasminewd2": "^2.0.0",
+    "ts-node": "^3.0.2"
   },
   "license": "MIT"
 }
