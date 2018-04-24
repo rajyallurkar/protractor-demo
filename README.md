@@ -6,7 +6,7 @@ Demo test application and protractor tests.
 Setup
 -----
 
-    git clone https://github.com/juliemr/protractor-demo.git
+    git clone https://github.com/rajyallurkar/protractor-demo.git
     cd protractor-demo
     npm install
     npm install --save-dev @types/jasmine
