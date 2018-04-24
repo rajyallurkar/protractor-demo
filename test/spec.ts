@@ -1,6 +1,11 @@
+import { PageObject} from '../';
+import { browser, by, element, ElementFinder, ElementArrayFinder } from 'protractor';
+
 describe('slow calculator', function() {
+  const p = new PageObject();
+
   beforeEach(function() {
-    browser.get('http://localhost:3456');
+    p.goToHomePage();
   });
 
   it('should add numbers', function() {
@@ -9,7 +14,7 @@ describe('slow calculator', function() {
 
     element(by.id('gobutton')).click();
 
-    expect(element(by.binding('latest')).getText()).
+    expect<any>(element(by.binding('latest')).getText()).
         toEqual('9');
   });
 
@@ -25,7 +30,7 @@ describe('slow calculator', function() {
       var memory =
           element.all(by.repeater('result in memory'));
 
-      expect(memory.count()).toEqual(0);
+      expect<any>(memory.count()).toEqual(0);
     });
 
     it('should fill the memory with past results', function() {
