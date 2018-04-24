@@ -1,1 +1,14 @@
-node_modules/
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# Test results and reports
+/target/*
+debug.log
+npm-debug.log.*
+src/external-modules/*/node_modules/
+_node_modules/
