@@ -9,6 +9,7 @@ Setup
     git clone https://github.com/juliemr/protractor-demo.git
     cd protractor-demo
     npm install
+    npm install --save-dev @types/jasmine
 
 To run
 ------
