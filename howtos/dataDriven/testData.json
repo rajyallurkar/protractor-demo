@@ -1,0 +1,14 @@
+[
+    {
+      "description": "Add two numbers",
+      "input_1": "2",
+      "input_2": "3",
+      "expectedOutput": "5"
+    },
+    {
+        "description": "Add two numbers",
+      "input_1": "3",
+      "input_2": "3",
+      "expectedOutput": "6"
+    }
+  ]
