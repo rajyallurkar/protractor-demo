@@ -11,6 +11,7 @@ describe('slow calculator', function() {
   all(require('./testData.json'), (data, iteration) => {
     it('should pass a normal test', function() {
       firstNum.sendKeys(data.input_1);
+      element(by.cssContainingText('option', data.operator)).click();
       secondNum.sendKeys(data.input_2);
       goButton.click();
       expect(result.getText()).toEqual(data.expectedOutput);

@@ -2,13 +2,29 @@
     {
       "description": "Add two numbers",
       "input_1": "2",
+      "operator": "+",
       "input_2": "3",
       "expectedOutput": "5"
     },
     {
-        "description": "Add two numbers",
+      "description": "Subtract two numbers",
       "input_1": "3",
+      "operator": "-",
       "input_2": "3",
-      "expectedOutput": "6"
+      "expectedOutput": "0"
+    },
+    {
+      "description": "Divide two numbers",
+      "input_1": "7",
+      "operator": "%",
+      "input_2": "3",
+      "expectedOutput": "1"
+    },
+    {
+      "description": "Multiply two numbers",
+      "input_1": "3",
+      "operator": "*",
+      "input_2": "3",
+      "expectedOutput": "9"
     }
   ]
